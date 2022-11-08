@@ -1,0 +1,15 @@
+
+<p><%= @student.first_name %></p> 
+<%#= image_tag(@student.avatar), if @student.avatar.attached? %>
+<%#= cl_image_tag((@student.avatar), :width=>70, :height=>53, :crop=>"scale") %>
+<!-- upper one is not working, add into helper -->
+<img src="<%= @student.avatar.attachment.url %>" alt="A nice alt value" />
+
+<%#= cloudinary_url(@student.avatar.key, width: 300, height: 200, crop: :scale, effect: "cartoonify") %>
+<%#= cl_image_tag(@student.avatar, :width => "auto:200", :dpr => :auto, :responsive_placeholder => "blank") %>
+
+
+  	<%= link_to "Edit", edit_student_path(@student) %>
+	<%= link_to "Destroy",student_path(@student),
+                method: :delete,
+                data: { confirm: "Are you sure?" } %>

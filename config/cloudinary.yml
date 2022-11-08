@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dsnwp9jet
+  api_key: '366211798747613'
+  api_secret: Mw8Q7YFiIgvMO-O3B3frV7yG54U
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dsnwp9jet
+  api_key: '366211798747613'
+  api_secret: Mw8Q7YFiIgvMO-O3B3frV7yG54U
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dsnwp9jet
+  api_key: '366211798747613'
+  api_secret: Mw8Q7YFiIgvMO-O3B3frV7yG54U
+  enhance_image_tag: true
+  static_file_support: false
